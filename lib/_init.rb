@@ -14,3 +14,11 @@ def kramdown2dmark(s)
 
   document.to_nanoc_ws_dmark
 end
+
+def index?(item)
+  !item.fetch(:is_hidden, false)
+end
+
+def index_rep?(rep)
+  rep.raw_path.match?(/\.(html|pdf)\z/)
+end

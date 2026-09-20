@@ -1,4 +1,7 @@
 ---
 is_hidden: true
 ---
-<%= xml_sitemap %>
+<%= xml_sitemap(
+  items: items.select { |i| index?(i) },
+  rep_select: proc { |r| index_rep?(r) })
+%>
