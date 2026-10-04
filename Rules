@@ -38,6 +38,14 @@ compile '/assets/style/*.css' do
   write item.identifier.without_ext + '-' + fingerprint('/assets/style/**/*') + '.css'
 end
 
+compile '/assets/scripts/*' do
+  if item.identifier.ext == 'erb'
+    filter :erb
+  end
+
+  write item.identifier.without_exts + '-' + fingerprint('/assets/scripts/**/*') + '.js'
+end
+
 passthrough '/_redirects'
 ignore '/**/_*'
 

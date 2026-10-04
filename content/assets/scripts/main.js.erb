@@ -1,0 +1,21 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.querySelector('.hero__slides');
+
+  setInterval(() => {
+    const firstSlide = container.querySelector('.hero__slide:first-child');
+    const nextSlide = firstSlide.nextElementSibling;
+
+    if (nextSlide) {
+      firstSlide.style.opacity = 0;
+      nextSlide.style.opacity = 1;
+
+      setTimeout(() => {
+        container.appendChild(firstSlide);
+      }, 1200);
+    }
+  }, 4000);
+});
+
+<%= @items['/assets/docsearch-20260124/*.js'].compiled_content %>
+
+docsearch({apiKey:'3b10f9cf40d282e212f40bd445173aed',appId:'RNL791U9AF',indexName:'nanoc',container:'#search-box',debug:true});
