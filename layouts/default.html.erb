@@ -19,12 +19,18 @@
     <link href="<%= @items['/assets/source-sans-3-*/all.*'].path %>" media="screen" rel="stylesheet">
     <link href="<%= @items['/assets/source-code-pro-*/all.*'].path %>" media="screen" rel="stylesheet">
 
+    <meta property="og:site_name" content="Nanoc">
+    <meta property="og:url" content="<%= @config[:base_url] + @item_rep.path %>">
+    <meta property="og:title" content="<%= @item[:full_title] || @item[:title] %>">
+    <meta property="og:locale" content="en">
+
     <link rel="preconnect" href="https://RNL791U9AF-dsn.algolia.net" crossorigin>
     <meta name="viewport" content="width=device-width">
     <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
     <meta name="msvalidate.01" content="C17C3E6CB88433CBBAB71760E3F9B95A">
     <% if (d = @item[:meta_description]) %>
       <meta name="description" content="<%= h d %>">
+      <meta property="og:description" content="<%= h d %>">
     <% end %>
 
     <link rel="canonical" href="<%= @config[:base_url] + @item_rep.path %>">
