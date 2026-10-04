@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title><%= @item[:full_title] || 'Nanoc &raquo; ' + @item[:title] %></title>
+    <% if (t = @item[:full_title]) %>
+      <title><%= h(t) %></title>
+    <% else %>
+      <title><%= 'Nanoc &raquo; ' + h(@item[:title]) %></title>
+    <% end %>
 
     <!-- stylesheets -->
     <link href="<%= @items['/assets/style/main.*'].path %>" rel="stylesheet">
