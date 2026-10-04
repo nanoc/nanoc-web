@@ -1,5 +1,6 @@
 ---
-title: "Variables"
+title: "Variables reference"
+short_title: "Variables"
 ---
 
 #p At several moments in the compilation process, Nanoc exposes several variables containing site data. These variables take the appearance of Ruby instance variables, i.e. prefixed with an %code{@} sigil (e.g. %code{@items}).

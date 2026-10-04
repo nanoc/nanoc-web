@@ -1,5 +1,6 @@
 ---
-title: "Configuration"
+title: "Configuration reference"
+short_title: "Configuration"
 ---
 
 #section %h[id=text-extensions]{%code{text_extensions}}

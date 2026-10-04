@@ -1,5 +1,6 @@
 ---
-title: "Filters"
+title: "Filters reference"
+short_title: "Filters"
 ---
 
 #p The following is a list of Nanoc filters. Most of these are bundled with Nanoc; for those that are not, installation instructions are provided.
