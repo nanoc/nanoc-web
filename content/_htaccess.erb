@@ -7,12 +7,18 @@ DirectoryIndex index.html index.php
 
 
 ############################################################
-# CORS
+# SECURITY
 
 SetEnvIf Origin "http(s)?://nanoc\.denisdefreyne\.com$" REQUEST_ORIGIN=$0
 Header add Access-Control-Allow-Origin %{REQUEST_ORIGIN}e env=REQUEST_ORIGIN
 Header add Access-Control-Allow-Credentials "true" env=REQUEST_ORIGIN
 Header merge Vary Origin
+
+Header set Content-Security-Policy "default-src 'self'; base-uri 'self'; form-action 'self'; script-src 'self' 'unsafe-inline'; connect-src 'self' https://*.algolia.net https://*.algolianet.com; img-src 'self'; style-src 'self' 'unsafe-inline'; object-src 'self';"
+
+Header set Cross-Origin-Embedder-Policy "credentialless"
+Header set Cross-Origin-Opener-Policy "same-origin"
+
 
 
 ############################################################
