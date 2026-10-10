@@ -1,0 +1,15 @@
+http://nanoc.stoneship.org/*  https://nanoc.denisdefreyne.com/:splat 301!
+https://nanoc.stoneship.org/* https://nanoc.denisdefreyne.com/:splat 301!
+
+http://nanoc.ws/*  https://nanoc.denisdefreyne.com/:splat 301!
+https://nanoc.ws/* https://nanoc.denisdefreyne.com/:splat 301!
+http://www.nanoc.ws/*  https://nanoc.denisdefreyne.com/:splat 301!
+https://www.nanoc.ws/* https://nanoc.denisdefreyne.com/:splat 301!
+
+http://nanoc.app/* https://nanoc.denisdefreyne.com/:splat 301!
+https://nanoc.app/* https://nanoc.denisdefreyne.com/:splat 301!
+http://www.nanoc.app/*  https://nanoc.denisdefreyne.com/:splat 301!
+https://www.nanoc.app/* https://nanoc.denisdefreyne.com/:splat 301!
+
+/doc /about/
+/doc/ /about/
