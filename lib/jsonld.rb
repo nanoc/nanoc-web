@@ -104,6 +104,31 @@ def jsonld_object_for_web_page(item, seen)
   obj.merge(
     {
       'name' => item.fetch(:full_title) { item.fetch(:title) },
+      'about' => {
+        'name' => 'Nanoc',
+        'author' => jsonld_object_for_person(seen),
+        '@type' => %w[
+          SoftwareApplication
+          SoftwareSourceCode
+        ],
+        'applicationCategory' => 'DeveloperApplication',
+        'operatingSystem' => 'Cross-platform',
+        'programmingLanguage' => {
+          '@type' => 'ComputerLanguage',
+          'name' => 'Ruby',
+          'sameAs' => 'https://www.wikidata.org/wiki/Q3757',
+        },
+        'codeRepository' => 'https://github.com/nanoc/nanoc',
+        'downloadUrl' => 'https://rubygems.org/gems/nanoc',
+        'license' => 'https://opensource.org/licenses/MIT',
+        'sameAs' => [
+          'https://www.wikidata.org/wiki/Q28132281',
+          'https://dbpedia.org/page/Nanoc',
+          'https://en.wikipedia.org/wiki/Nanoc',
+          'https://github.com/nanoc/nanoc',
+          'https://rubygems.org/gems/nanoc',
+        ],
+      },
     },
   )
 end
