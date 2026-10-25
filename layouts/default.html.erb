@@ -19,6 +19,9 @@
     <link href="<%= @items['/assets/source-sans-3-*/all.*'].path %>" media="screen" rel="stylesheet">
     <link href="<%= @items['/assets/source-code-pro-*/all.*'].path %>" media="screen" rel="stylesheet">
 
+    <%# --- JSON LD --- %>
+    <%= jsonld_element_for(@item) %>
+
     <meta property="og:site_name" content="Nanoc">
     <meta property="og:url" content="<%= @config[:base_url] + @item_rep.path %>">
     <meta property="og:title" content="<%= @item[:full_title] || @item[:title] %>">
