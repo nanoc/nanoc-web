@@ -110,11 +110,12 @@ def jsonld_object_for_web_page(item, seen)
       'name' => item.fetch(:full_title) { item.fetch(:title) },
       'about' => {
         'name' => 'Nanoc',
-        'author' => jsonld_object_for_person(seen),
         '@type' => %w[
           SoftwareApplication
           SoftwareSourceCode
         ],
+        'author' => jsonld_object_for_person(seen),
+        'publisher' => jsonld_object_for_person(seen),
         'description' => 'A flexible static-site generator written in Ruby',
         'keywords' => [
           'static-site generator',
