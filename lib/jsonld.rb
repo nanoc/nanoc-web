@@ -115,6 +115,12 @@ def jsonld_object_for_web_page(item, seen)
           SoftwareApplication
           SoftwareSourceCode
         ],
+        'description' => 'A flexible static-site generator written in Ruby',
+        'keywords' => [
+          'static-site generator',
+          'ssg',
+          'ruby',
+        ],
         'applicationCategory' => 'DeveloperApplication',
         'operatingSystem' => 'Cross-platform',
         'programmingLanguage' => {
