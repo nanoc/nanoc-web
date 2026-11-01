@@ -135,6 +135,8 @@ def jsonld_object_for_web_page(item, seen)
           'https://spdx.org/licenses/MIT.html',
         ],
         'softwareVersion' => latest_release_info[:version],
+        'datePublished' => '2007-05-03',
+        'dateModified' => latest_release_info[:date].strftime('%Y-%m-%d'),
         'sameAs' => [
           'https://www.wikidata.org/wiki/Q28132281',
           'https://dbpedia.org/page/Nanoc',
