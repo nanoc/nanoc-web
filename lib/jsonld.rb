@@ -116,7 +116,7 @@ def jsonld_object_for_web_page(item, seen)
         'programmingLanguage' => {
           '@type' => 'ComputerLanguage',
           'name' => 'Ruby',
-          'sameAs' => 'https://www.wikidata.org/wiki/Q3757',
+          'sameAs' => 'https://www.wikidata.org/wiki/Q161053',
         },
         'codeRepository' => 'https://github.com/nanoc/nanoc',
         'downloadUrl' => 'https://rubygems.org/gems/nanoc',
