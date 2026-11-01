@@ -121,6 +121,7 @@ def jsonld_object_for_web_page(item, seen)
         'codeRepository' => 'https://github.com/nanoc/nanoc',
         'downloadUrl' => 'https://rubygems.org/gems/nanoc',
         'license' => 'https://opensource.org/licenses/MIT',
+        'softwareVersion' => latest_release_info[:version],
         'sameAs' => [
           'https://www.wikidata.org/wiki/Q28132281',
           'https://dbpedia.org/page/Nanoc',
