@@ -81,7 +81,11 @@ def jsonld_object_for_person(seen)
     {
       'name' => 'Denis Defreyne',
       'url' => 'https://denisdefreyne.com',
-      'sameAs' => ['https://denisdefreyne.com'],
+      'sameAs' => [
+        'https://github.com/denisdefreyne',
+        'https://www.linkedin.com/in/denisdefreyne/',
+        'https://ruby.social/@denis',
+      ],
     },
   )
 end
